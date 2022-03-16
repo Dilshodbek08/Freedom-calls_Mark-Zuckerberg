@@ -1,0 +1,80 @@
+.header{
+  height: 680px;
+  background-image: url("../../img/watches.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: calc(50% + 600px) bottom;
+  background-size: 500px 520px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+.header__header-wrapper{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.header__logo-link{
+  @include logo-link;
+}
+
+.header__logo-img{
+  @include logo-img;
+  width: 60px;
+  height: 60px;
+}
+
+.header__navbar{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+}
+
+.header__list{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  @include ul-list;
+
+}
+
+.header__item{
+  @include ul-item;
+  position: relative;
+  display: inline;
+}
+
+.header__item-link{
+  @include item-link;
+}
+
+.header__item-link::before{
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: -2px;
+  width: 0px;
+  height: 2px;
+  background: #8d8d8d;
+  transition: all 0.3s;
+}
+
+.header__item-link:hover::before{
+  width: 100%;
+  left: 0;
+}
+
+.header__input{
+  width: 162px;
+  border: none;
+  padding-bottom: 3px;
+  border-bottom: 2px solid #A7A7A8;
+}
+
+.header__input:focus{
+  outline: none;
+  border: none;
+  border-bottom: 2px solid #8d8d8d;
+}

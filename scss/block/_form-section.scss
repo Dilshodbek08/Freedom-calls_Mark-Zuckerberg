@@ -1,0 +1,36 @@
+.form-section__div3{
+  background-color: #fff;
+  padding-left: 20px;
+  padding-right: 20px;
+  height: 50px;
+}
+
+.form-section__textarea{
+  padding: 10px 0px 10px 0px;
+  border: none;
+  resize: none;
+  height: 41px;
+  display: inline-block;
+  width: 478px;
+}
+
+.form-section__textarea:focus{
+  outline: none;
+  border: none;
+
+}
+
+form{
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  height: 50px;
+}
+
+.form-section__send{
+  border: none;
+  background-color: #fff;
+  padding: 5px 0px;
+  color: #6A96D8;
+  font-weight: bold;
+}
